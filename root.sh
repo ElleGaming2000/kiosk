@@ -15,6 +15,5 @@ ExecStart=-/sbin/agetty -a '$username' %I $TERM' > /etc/systemd/system/getty@tty
 
 cp /home/$username/.profile /home/$username/.profile.bak
 echo '[ "$(tty)" = "/dev/tty1" ] && exec startx' >> /home/$username/.profile
-cat /home/$username/.profile
 
 systemctl set-default multi-user.target
