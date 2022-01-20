@@ -7,6 +7,9 @@ super + Escape
 super + @space
 	rofi -show drun
 
+super + t
+	kitty
+
 super + {h,j,k,l}
 	bspc node -f {west,south,north,east}
 
