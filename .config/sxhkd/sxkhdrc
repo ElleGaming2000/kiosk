@@ -1,0 +1,14 @@
+super + {_,alt +} q
+	bspc {node -c,quit}
+
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + @space
+	rofi -show drun
+
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
